@@ -1,6 +1,6 @@
 # ember-custom-select
 
-This README outlines the details of collaborating on this Ember addon.
+Some inspiration for the custom styles for a select element in Ember.
 
 ## Installation
 
