@@ -1,5 +1,41 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
+<div class="container">
+	<!-- Top Navigation -->
+	<div class="codrops-top clearfix">
+		<a class="codrops-icon codrops-icon-prev" href="http://github.com/rajasegar/ember-custom-select/"><span>Github</span></a>
+		<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=19400"><span>Codrops Article</span></a></span>
+	</div>
+	<header class="codrops-header">
+		<h1>Ember-Custom-Select</h1>	
+		<nav class="codrops-demos">
+			<a class="current-demo" href="index.html">Border</a>
+			<a href="index2.html">Underline</a>
+			<a href="index3.html">Elastic</a>
+			<a href="index4.html">Slide</a>
+			<a href="index5.html">Overlay</a>
+			<a href="index6.html">Rotate</a>
+			<a href="index7.html">Box Select</a>
+			<a href="index8.html">Circular</a>
+		</nav>
+	</header>
+	<section>
+    {{#ec-select}}
+			<option value="" disabled selected>Preferred contact method</option>
+			<option value="email">E-Mail</option>
+			<option value="twitter">Twitter</option>
+			<option value="linkedin">LinkedIn</option>
+    {{/ec-select}}
+	</section>
+	<!-- Related demos -->
+	<section class="related">
+		<p>If you enjoyed this demo you might also like:</p>
+		<a href="http://tympanus.net/Development/ResponsiveMultiLevelMenu/">
+			<img src="https://tympanus.net/codrops/wp-content/uploads/2013/04/MultiLevelMenu-300x162.jpg" />
+			<h3>Multi-Level Menu</h3>
+		</a>
+		<a href="http://tympanus.net/Development/SimpleDropDownEffects/">
+			<img src="https://tympanus.net/codrops/wp-content/uploads/2012/11/SimpleDropDownEffects-300x162.jpg" />
+			<h3>Drop-Down List Effects</h3>
+		</a>
+	</section>
+</div><!-- /container -->
 {{outlet}}

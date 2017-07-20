@@ -1,0 +1,13 @@
+<span class="cs-placeholder" onclick={{action 'toggleSelect'}}>Preferred Contact method</span>
+<div class="cs-options">
+  <ul>
+    {{#each children as |child|}}
+      <li>
+        <span>{{child}}</span>
+      </li>
+      {{/each}}
+  </ul>
+</div>
+<select>
+  {{yield}}
+</select>

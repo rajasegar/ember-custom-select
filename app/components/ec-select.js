@@ -1,0 +1,1 @@
+export { default } from 'ember-custom-select/components/ec-select';
