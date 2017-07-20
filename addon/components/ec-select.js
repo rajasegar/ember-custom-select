@@ -8,8 +8,8 @@ const {
 
 export default Component.extend({
   layout,
-  classNames: ['cs-select', 'cs-skin-border'],
-  classNameBindings: ['csActive'],
+  classNames: ['cs-select'],
+  classNameBindings: ['csActive','style'],
   csActive: false,
   children: A(),
   actions: {
