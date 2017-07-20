@@ -1,0 +1,13 @@
+{
+    "project": {
+        "name": "ember-custom-select",
+        "description": "Some inspiration for the custom styles for a select element in Ember.",
+        "version": "v0.1.1"
+    },
+    "files": {},
+    "modules": {},
+    "classes": {},
+    "elements": {},
+    "classitems": [],
+    "warnings": []
+}
