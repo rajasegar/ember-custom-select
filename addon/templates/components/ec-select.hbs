@@ -1,8 +1,14 @@
-<span class="cs-placeholder" onclick={{action 'toggleSelect'}}>Preferred Contact method</span>
+<span class="cs-placeholder" onclick={{action 'toggleSelect'}}>
+  {{#if selectedItem}}
+    {{selectedItem}}
+  {{else}}
+    {{placeholder}}
+  {{/if}}
+</span>
 <div class="cs-options">
   <ul>
     {{#each children as |child|}}
-      <li>
+      <li onclick={{action 'onChange' child}}>
         <span>{{child}}</span>
       </li>
       {{/each}}

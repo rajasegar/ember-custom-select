@@ -11,10 +11,16 @@ export default Component.extend({
   classNames: ['cs-select'],
   classNameBindings: ['csActive','style'],
   csActive: false,
+  selectedItem: null,
   children: A(),
   actions: {
     toggleSelect() {
       this.toggleProperty('csActive');
+    },
+
+    onChange(selected) {
+      this.set('selectedItem', selected);
+      this.send('toggleSelect');
     }
   },
   didInsertElement() {

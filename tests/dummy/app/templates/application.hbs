@@ -7,7 +7,7 @@
 	<header class="codrops-header">
 		<h1>Ember-Custom-Select</h1>	
 		<nav class="codrops-demos">
-			<a onclick={{action 'toggleStyle' 'border'}} class="current-demo" href="index.html">Border</a>
+			<a onclick={{action 'toggleStyle' 'border'}} class="current-demo">Border</a>
 			<a  onclick={{action 'toggleStyle' 'underline'}}>Underline</a>
 			<a  onclick={{action 'toggleStyle' 'elastic'}}>Elastic</a>
 			<a  onclick={{action 'toggleStyle' 'slide'}}>Slide</a>
@@ -18,8 +18,7 @@
 		</nav>
 	</header>
 	<section>
-    {{#ec-select style=csStyle}}
-			<option value="" disabled selected>Preferred contact method</option>
+    {{#ec-select style=csStyle placeholder="Preferred contact method"}}
 			<option value="email">E-Mail</option>
 			<option value="twitter">Twitter</option>
 			<option value="linkedin">LinkedIn</option>

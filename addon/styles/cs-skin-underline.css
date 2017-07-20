@@ -42,7 +42,7 @@ div.cs-skin-underline {
 }
 
 .cs-skin-underline .cs-options {
-	background: #bbc7c8;
+	background: transparent;
 	opacity: 0;
 	-webkit-transition: opacity 0.3s 0.4s, visibility 0s 0.7s;
 	transition: opacity 0.3s 0.4s, visibility 0s 0.7s;
