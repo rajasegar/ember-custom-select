@@ -8,8 +8,8 @@
 <div class="cs-options">
   <ul>
     {{#each children as |child|}}
-      <li onclick={{action 'onChange' child}}>
-        <span>{{child}}</span>
+      <li onclick={{action 'onChange' child.value}} class="{{child.class}}">
+        <span>{{child.value}}</span>
       </li>
       {{/each}}
   </ul>

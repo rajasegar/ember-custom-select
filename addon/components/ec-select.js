@@ -12,7 +12,6 @@ export default Component.extend({
   classNameBindings: ['csActive','style'],
   csActive: false,
   selectedItem: null,
-  children: A(),
   actions: {
     toggleSelect() {
       this.toggleProperty('csActive');
@@ -27,8 +26,16 @@ export default Component.extend({
     this._super(...arguments);
     let _children = this.get('children');
     this.$('option').each((index, el) => {
-      _children.pushObject(el.value);
+      let childObj = {
+        value: el.value,
+        class: el.dataset.class || ''
+      };
+      _children.pushObject(childObj);
     });
     this.set('children', _children);
+  },
+  init() {
+    this._super(...arguments);
+    this.set('children', A());
   }
 });
