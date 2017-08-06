@@ -1,6 +1,6 @@
 <span class="cs-placeholder" onclick={{action 'toggleSelect'}}>
   {{#if selectedItem}}
-    {{selectedItem}}
+    {{selectedItem.text}}
   {{else}}
     {{placeholder}}
   {{/if}}
@@ -8,8 +8,8 @@
 <div class="cs-options">
   <ul>
     {{#each children as |child|}}
-      <li onclick={{action 'onChange' child.value}} class="{{child.class}}">
-        <span>{{child.value}}</span>
+      <li onclick={{action 'onChange' child}} class="{{child.class}}">
+        <span>{{child.text}}</span>
       </li>
       {{/each}}
   </ul>

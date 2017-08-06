@@ -1,2 +1,6 @@
 @import 'normalize.css';
 @import 'demo.css';
+
+.cs-skin-custom > span {
+    border: 2px dotted #c0c6c4;
+}

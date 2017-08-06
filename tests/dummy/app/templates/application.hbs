@@ -7,27 +7,25 @@
 	<header class="codrops-header">
 		<h1>ember-custom-select</h1>	
 		<nav class="codrops-demos">
-      {{#link-to 'index'}}Border{{/link-to}}
-			<a  onclick={{action 'toggleStyle' 'underline'}}>Underline</a>
-			<a  onclick={{action 'toggleStyle' 'elastic'}}>Elastic</a>
-			<a  onclick={{action 'toggleStyle' 'slide'}}>Slide</a>
-			<a  onclick={{action 'toggleStyle' 'overlay'}}>Overlay</a>
-			<a  onclick={{action 'toggleStyle' 'rotate'}}>Rotate</a>
-      {{#link-to 'box-select'}}Box Select{{/link-to}}
-			<a  onclick={{action 'toggleStyle' 'circular'}}>Circular</a>
+      {{#link-to 'index' activeClass='current-demo'}}Border{{/link-to}}
+      {{#link-to 'underline' activeClass='current-demo'}}Underline{{/link-to}}
+      {{#link-to 'elastic' activeClass='current-demo'}}Elastic{{/link-to}}
+      {{#link-to 'slide' activeClass='current-demo'}}Slide{{/link-to}}
+      {{#link-to 'overlay' activeClass='current-demo'}}Overlay{{/link-to}}
+      {{#link-to 'rotate' activeClass='current-demo'}}Rotate{{/link-to}}
+      {{#link-to 'box-select' activeClass='current-demo'}}Box Select{{/link-to}}
+      {{#link-to 'circular' activeClass='current-demo'}}Circular{{/link-to}}
 		</nav>
 	</header>
 {{outlet}}
 	<!-- Related demos -->
 	<section class="related">
 		<p>If you enjoyed this demo you might also like:</p>
-		<a href="http://tympanus.net/Development/ResponsiveMultiLevelMenu/">
-			<img src="https://tympanus.net/codrops/wp-content/uploads/2013/04/MultiLevelMenu-300x162.jpg" />
-			<h3>Multi-Level Menu</h3>
+		<a href="http://rajasegar.github.io/ember-loading-button">
+			<h3>ember-loading-button</h3>
 		</a>
-		<a href="http://tympanus.net/Development/SimpleDropDownEffects/">
-			<img src="https://tympanus.net/codrops/wp-content/uploads/2012/11/SimpleDropDownEffects-300x162.jpg" />
-			<h3>Drop-Down List Effects</h3>
+		<a href="http://rajasegar.github.io/ember-stylish-buttons/">
+			<h3>ember-stylish-buttons</h3>
 		</a>
 	</section>
 </div><!-- /container -->

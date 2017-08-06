@@ -3,7 +3,7 @@ import bodyClass from '../utils/body-class';
 
 export default Ember.Route.extend({
   afterModel() {
-    this._super(...arguments); 
-    bodyClass('demo-1');
+    this._super(...arguments);
+    bodyClass('color-6');
   }
 });

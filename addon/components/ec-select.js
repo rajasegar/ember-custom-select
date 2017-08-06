@@ -2,6 +2,7 @@ import Ember from 'ember';
 import layout from '../templates/components/ec-select';
 
 const {
+  computed,
   Component,
   A
 } = Ember;
@@ -9,8 +10,11 @@ const {
 export default Component.extend({
   layout,
   classNames: ['cs-select'],
-  classNameBindings: ['csActive','style'],
+  classNameBindings: ['csActive','csStyle', 'customClasses'],
   csActive: false,
+  csStyle: computed('style', function() {
+    return `cs-skin-${this.get('style')}`;
+  }),
   selectedItem: null,
   actions: {
     toggleSelect() {
@@ -28,7 +32,8 @@ export default Component.extend({
     this.$('option').each((index, el) => {
       let childObj = {
         value: el.value,
-        class: el.dataset.class || ''
+        class: el.dataset.class || '',
+        text: el.innerText
       };
       _children.pushObject(childObj);
     });

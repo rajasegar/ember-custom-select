@@ -8,6 +8,12 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('box-select');
+  this.route('underline');
+  this.route('elastic');
+  this.route('slide');
+  this.route('overlay');
+  this.route('rotate');
+  this.route('circular');
 });
 
 export default Router;
