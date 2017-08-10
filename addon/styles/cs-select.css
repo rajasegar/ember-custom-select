@@ -44,7 +44,6 @@ div.cs-select:focus {
 	speak: none;
 	position: absolute;
 	top: 50%;
-	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -61,7 +60,6 @@ div.cs-select:focus {
 }
 
 .cs-select.cs-active > span::after {
-	-webkit-transform: translateY(-50%) rotate(180deg);
 	transform: translateY(-50%) rotate(180deg);
 }
 
